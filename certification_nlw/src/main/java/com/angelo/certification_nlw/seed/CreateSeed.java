@@ -26,9 +26,9 @@ public class CreateSeed {
         CreateSeed createSeed = new CreateSeed(dataSource);
         createSeed.run(args);
     }
-
+    
     public void run(String...args){
-        executeSqlFile("src/main/resource/create.sql");
+        executeSqlFile("certification_nlw/src/main/resources/create.sql");
     }
 
     public void executeSqlFile(String filePath){
