@@ -24,7 +24,7 @@ public class QuestionController {
 
     @GetMapping("/technology/{technology}")
     public List<QuestionResultDTO> findByTechnology(@PathVariable String technology) {
-        System.out.println("TECH === " + technology);
+
         var result = this.questionRepository.findByTechnology(technology);
 
         var toMap = result.stream().map(question -> mapQuestionToDTO(question))
